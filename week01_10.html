@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            text-align: center;       /* 讓網頁內所有行內元素（如 label, select, button）水平置中 */
+        }
+
+        h1 {
+            text-align: center;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        p {
+            max-width: 300px;
+            text-align: center;
+            color: blue;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 5px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: yellow;
+        }
+
+        button {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <h1>點餐</h1>
+        <p>主餐</p>
+        <label for="food">請選擇主餐</label>
+        <select name="food" id="food">
+            <option value="">請選擇</option>
+            <option value="">排骨便當</option>
+            <option value="">雞腿便當</option>
+            <option value="">魚排便當</option>
+            <option value="">素食便當</option>
+        </select>
+        <br>
+
+        <p>飲料</p>
+        <label for="drink">請選擇飲料</label>
+        <select name="drink" id="drink">
+            <option value="">請選擇</option>
+            <option value="">可樂</option>
+            <option value="">雪碧</option>
+            <option value="">紅茶</option>
+            <option value="">綠茶</option>
+        </select>
+        <br>
+
+
+        <button onclick="add()">增加 +1</button>
+        <button onclick="reset()">重置</button>
+    </form>
+</body>
+
+</html>
